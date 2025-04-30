@@ -11,6 +11,7 @@ This repository contains two Python command-line interface (CLI) tools built to 
 ```
 pip install -r requirements.txt
 ```
+### set the environment variables in the .env for the api endpoints and the access token
 
 ## 🛠️ Features
 ### Exercise 1: 
