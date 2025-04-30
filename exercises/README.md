@@ -124,14 +124,8 @@ Gyebale ko, twagala okwogera ku nsonga za leero.
 ==================================================
 ```
 
-## 📄 License
 
-[License information]
-
-## 🤝 Contributing
-
-[Contribution guidelines]
 
 ## 📞 Support
 
-[Support information]
+elijahmurket@gmail.com
