@@ -1,11 +1,16 @@
 # 🌐 Sunbird Language CLI Tools
 
 This repository contains two Python command-line interface (CLI) tools built to work with the **Sunbird AI APIs** for:
-
-1. 🌍 **Text Translation** between local Ugandan languages and English
+1. 🌍 **Algorithms** 
 2. 🎙️ **Audio Transcription** for short speech recordings
+3. 🌍 **Text Translation** between local Ugandan languages and English
 
 ---
+
+## Getting Started
+```
+pip install -r requirements.txt
+```
 
 ## 🛠️ Features
 ### Exercise 1: 
@@ -13,7 +18,7 @@ This repository contains two Python command-line interface (CLI) tools built to 
 
 
 
-### 🔤 Exercise 2: Transcription Tool
+### 🔤 Exercise 2: Text Translation Tool
 - Translate text between:
   - English (`eng`)
   - Luganda (`lug`)
@@ -26,7 +31,12 @@ This repository contains two Python command-line interface (CLI) tools built to 
 
 ## Test
 - also contains test file to output the different translations for all pairs though encountered     500  internal error for some translations
-- pytest -s tests/test_translate.py
+
+```
+pytest -s tests/test_translate.py
+
+```
+
 
 ### 🔊 Exercise 3: Audio Transcription Tool
 - Supports audio files (`.mp3`, `.wav`, `.ogg`, `.m4a`, `.aac`)
@@ -36,5 +46,4 @@ This repository contains two Python command-line interface (CLI) tools built to 
 
 ---
 
-## 📁 Project Structure
 
