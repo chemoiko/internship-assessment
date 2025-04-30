@@ -1,6 +1,11 @@
 import requests
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
 # Add language code mapping
+url = os.getenv("SUNBIRD_TRANSLATE_API_URL")
+access_token = os.getenv("ACCESS_TOKEN")
 
 LANGUAGE_CODES = {
     "English": "eng",
@@ -31,7 +36,6 @@ def get_language_input(prompt):
 
 
 def translate_text(text, source_lang, target_lang, access_token):
-    url = "https://api.sunbird.ai/tasks/nllb_translate"
 
     # Convert language names to codes
     source_code = LANGUAGE_CODES.get(source_lang)
@@ -65,8 +69,6 @@ def translate_text(text, source_lang, target_lang, access_token):
 
 
 def main():
-    access_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJwYXRyaWNrY21kIiwiYWNjb3VudF90eXBlIjoiRnJlZSIsImV4cCI6NDg2OTE4NjUzOX0.wcFG_GjBSNVZCpP4NPC2xk6Dio8Jdd8vMb8e_rzXOFc"
-    access_token = access_token.strip()  # Remove any whitespace
 
     if not access_token:
         print("Error: Access token is empty")
