@@ -1,5 +1,5 @@
 from dotenv import load_dotenv
-from translate import translate_text, LANGUAGE_CODES
+from exercises.translate import translate_text, LANGUAGE_CODES
 import os
 import pytest
 
